@@ -80,7 +80,7 @@ function App() {
 
     const digest = proof.messageDigest()
     // wallet.
-    const signature = await wallet.signMessage(digest)
+    const signature = await wallet.signDigest(digest)
 
     proof.signature = signature
 
